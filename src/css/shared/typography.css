@@ -1,0 +1,10 @@
+:root {
+    --p-font-text: "Open Sans Condensed", sans-serif;
+    --p-font-weight: 200;
+    --p-font-color: var(--color-fg);
+
+    --h-font-text: "Open Sans", sans-serif;
+    --h-font-weight: 400;
+    --h-line-height: 1.5;
+    --h-font-color: var(--color-fg);
+}

@@ -1,5 +1,5 @@
 // Import css
-import style from "./css/main.css";
+import styles from "./css/main.css";
 
 // Import json
 import "./json/ru.json";

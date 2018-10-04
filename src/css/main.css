@@ -1,58 +1,24 @@
-/* CONTENT WRAPPER */
+@import "shared/colors.css";
+@import "shared/typography.css";
 
-.content-wrapper {
-    margin-top: 200px;
-}
-
-.content {
-    width: 100%;
-    height: 800px;
-    position: relative;
-    /* background-color: rgb(30, 30, 30); */
-    background-image: url("../assets/noise.png");
-}
-
-.stripes {
-    width: 100%;
-    height: 25px;
-    position: absolute;
-    background: repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 10px,
-        rgba(0, 0, 0, 0.2) 10px,
-        rgba(0, 0, 0, 0.2) 20px
-    ),
-    url("../assets/noise.png");
-}
-
-.stripes-bottom {
-    bottom: 20px;
-}
-
-.stripes-top {
-    top: 20px;
-}
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300');
 
 /* HEADER WRAPPER */
 .header-wrapper {
     z-index: -1;
     left: 0;
-    position: absolute;
-    height: 400px;
+    position: relative;
+    height: 300px;
     top: 0;
     width: 100%;
     background-image: url('../assets/layer1.jpg');
     background-position: 0 20%;
 }
-
-/* MAIN STYLING */
-body {
-    margin: 0;
-    padding: 0;
+.nav {
+    position: absolute;
+    height: 40px;
+    bottom: 0;
 }
-
 ul {
     list-style: none;
     padding: 0;
@@ -79,9 +45,56 @@ li a {
 .translate {
     width: 30px;
 }
-#cat {
-    float: right;
-    height: 100px;
-    position: relative;
-    top: -70px;
+
+
+/* CONTENT WRAPPER */
+
+.content-wrapper {
+}
+
+.stripes {
+    width: 100%;
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        var(--color-bg) 10px,
+        var(--color-bg) 20px
+    ),
+    url("../assets/noise.png");
+}
+
+.stripes-bottom {
+    bottom: 0;
+}
+
+.article {
+    padding: 10px;
+    margin-top: 20px !important;
+    background-color: var(--color-bg);
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/* MAIN STYLING */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/noise.png");
+}
+p {
+    font-family: var(--p-font-text);
+    font-weight: var(--p-font-weight);
+    color: var(--p-font-color);
+}
+h1 {
+    font-family: var(--h-font-text);
+    font-weight: var(--h-font-weight);
+    line-height: var(--h-line-height);
+    color: var(--h-font-color);
 }

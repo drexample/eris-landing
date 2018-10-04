@@ -24,7 +24,9 @@
                                 importLoaders: 1
                             }
                         },
-                        'postcss-loader'
+                        {
+                            loader: 'postcss-loader'
+                        }
                     ]
                 },
                 {
@@ -38,14 +40,5 @@
                 template: "./src/index.html",
                 filename: "./index.html"
             }),
-            //new MiniCssExtractPlugin({
-            //    filename: "[name].css",
-            //    chunkFilename: "[id].css"
-            //})
-            {
-                'postcss-import': {},
-                'postcss-preset-env': {},
-                'cssnano': {}
-            }
         ]
     };
