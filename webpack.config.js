@@ -1,23 +1,34 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin");
-
-module.exports = {
-    module: {
-        rules: [
-            {
-                test: /\.html$/,
-                use: [
-                    {
+    const HtmlWebPackPlugin = require("html-webpack-plugin");
+    const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+    module.exports = {
+        module: {
+            rules: [{
+                    test: /\.html$/,
+                    use: [{
                         loader: "html-loader",
-                        options: { minimize: true }
-                    }
-                ]
-            }
+                        options: {
+                            minimize: true
+                        }
+                    }]
+                },
+                {
+                    test: /\.css$/,
+                    use: [MiniCssExtractPlugin.loader, "css-loader"]
+                },
+                {
+                    test: /\.(png|svg|jpg|gif)$/,
+                    use: ['file-loader']
+                }
+            ]
+        },
+        plugins: [
+            new HtmlWebPackPlugin({
+                template: "./src/index.html",
+                filename: "./index.html"
+            }),
+            new MiniCssExtractPlugin({
+                filename: "[name].css",
+                chunkFilename: "[id].css"
+            })
         ]
-    },
-    plugins: [
-        new HtmlWebPackPlugin({
-            template: "./src/index.html",
-            filename: "./index.html"
-        })
-    ]
-};
+    };
