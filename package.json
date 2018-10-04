@@ -1,0 +1,12 @@
+{
+  "name": "gamma-landing-modernized",
+  "version": "0.1.0",
+  "description": "Landing page for Gamma station.",
+  "main": "index.js",
+  "author": "Valkyrie",
+  "license": "GPL-3.0-only",
+  "private": false,
+  "dependencies": {
+    "webpack": "^4.20.2"
+  }
+}
