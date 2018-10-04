@@ -1,3 +1,5 @@
+/* CONTENT WRAPPER */
+
 .content-wrapper {
     margin-top: 200px;
 }
@@ -31,6 +33,9 @@
 .stripes-top {
     top: 20px;
 }
+
+
+/* HEADER WRAPPER */
 .header-wrapper {
     z-index: -1;
     left: 0;
@@ -41,6 +46,8 @@
     background-image: url('../assets/layer1.jpg');
     background-position: 0 20%;
 }
+
+/* MAIN STYLING */
 body {
     margin: 0;
     padding: 0;
