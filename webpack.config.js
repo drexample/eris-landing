@@ -16,6 +16,7 @@
                     test: /\.css$/,
                     // use: [MiniCssExtractPlugin.loader, "css-loader"] // Default CSS Loader
                     use: [
+			    'style-loader',
                         {
                             loader: 'css-loader',
                             options: {
