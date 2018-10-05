@@ -49,21 +49,25 @@ module.exports = {
     plugins: [
         // Home
         new HtmlWebPackPlugin({
+            page: 'index',
             title: 'Home',
             filename: 'index.html',
             template: 'src/templates/template.ejs'
         }),
         new HtmlWebPackPlugin({
+            page: 'bans',
             title: 'Bans',
             filename: 'bans.html',
             template: 'src/templates/template.ejs'
         }),
         new HtmlWebPackPlugin({
+            page: 'manifest',
             title: 'Manifest',
             filename: 'manifest.html',
             template: 'src/templates/template.ejs'
         }),
         new HtmlWebPackPlugin({
+            page: 'monitor',
             title: 'Monitor',
             filename: 'monitor.html',
             template: 'src/templates/template.ejs'

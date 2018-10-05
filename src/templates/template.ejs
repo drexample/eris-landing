@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="Content-type" content="text/html" charset="UTF-8" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Eris Gamma - <%= htmlWebpackPlugin.options.title %></title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.com/libraries/10up-sanitize.css" />
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
 </head>
@@ -14,10 +14,10 @@
         <img id="en.svg" width="30">
         <div class="nav" >
         <ul>
-            <li><a href="./index.html" class="lang" key="home" id="active">Главная</a></li>
-            <li><a href="./bans.html" class="lang" key="bans">Баны</a></li>
-            <li><a href="./monitor.html" class="lang" key="monitor">Состав</a></li>
-            <li><a href="./manifest.html" class="lang" key="manifest">Манифест</a></li>
+            <li><a href="./index.html" class="lang" key="home" <% if(htmlWebpackPlugin.options.title == 'Home'){ %> id="active" <% } %>>Главная</a></li>
+            <li><a href="./bans.html" class="lang" key="bans" <% if(htmlWebpackPlugin.options.title == 'Bans'){ %> id="active" <% } %>>Баны</a></li>
+            <li><a href="./monitor.html" class="lang" key="monitor" <% if(htmlWebpackPlugin.options.title == 'Monitor'){ %> id="active" <% } %>>Состав</a></li>
+            <li><a href="./manifest.html" class="lang" key="manifest" <% if(htmlWebpackPlugin.options.title == 'Manifest'){ %> id="active" <% } %>>Манифест</a></li>
             <li><a href="#" class="lang" key="wiki">Вики</a></li>
         </ul>
         </div>
