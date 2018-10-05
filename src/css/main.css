@@ -96,4 +96,13 @@ h1 {
     font-weight: var(--h-font-weight);
     line-height: var(--h-line-height);
     color: var(--h-font-color);
+    margin: 0;
+}
+
+h2 {
+    font-family: var(--h-font-text);
+    font-weight: 200;
+    line-height: var(--h-line-height);
+    color: var(--h-font-color);
+    font-size: 0.6em;
 }
