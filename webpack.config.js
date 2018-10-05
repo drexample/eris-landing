@@ -2,7 +2,6 @@
     const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
     module.exports = {
-        parser: 'sugarss',
         module: {
             rules: [{
                     test: /\.html$/,
@@ -17,7 +16,6 @@
                     test: /\.css$/,
                     // use: [MiniCssExtractPlugin.loader, "css-loader"] // Default CSS Loader
                     use: [
-                        'style-loader',
                         {
                             loader: 'css-loader',
                             options: {
