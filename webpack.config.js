@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        filename: 'index_bundle.js'
+        filename: 'index_bundle.js',
     },
     module: {
         rules: [{
@@ -20,7 +20,6 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                // use: [MiniCssExtractPlugin.loader, "css-loader"] // Default CSS Loader
                 use: [
                     'style-loader',
                     {
@@ -35,15 +34,14 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jp(e*)g|gif)$/,
+                test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [{
-                    loader: 'url-loader',
+                    loader: 'file-loader',
                     options: {
-                        limit: 8000,
-                        name: 'assets/[hash]-[name].[ext]'
+                        name: './assets/[hash].[ext]'
                     }
                 }]
-            }
+            },
         ]
     },
     plugins: [
@@ -51,24 +49,31 @@ module.exports = {
         new HtmlWebPackPlugin({
             page: 'index',
             title: 'Home',
+            hash: true,
             filename: 'index.html',
             template: 'src/templates/template.ejs'
         }),
+        // Bans
         new HtmlWebPackPlugin({
             page: 'bans',
             title: 'Bans',
+            hash: true,
             filename: 'bans.html',
             template: 'src/templates/template.ejs'
         }),
+        // Manifest
         new HtmlWebPackPlugin({
             page: 'manifest',
             title: 'Manifest',
+            hash: true,
             filename: 'manifest.html',
             template: 'src/templates/template.ejs'
         }),
+        // Monitor
         new HtmlWebPackPlugin({
             page: 'monitor',
             title: 'Monitor',
+            hash: true,
             filename: 'monitor.html',
             template: 'src/templates/template.ejs'
         }),

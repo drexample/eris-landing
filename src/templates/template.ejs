@@ -10,8 +10,8 @@
 
 <body>
     <div class="header-wrapper">
-        <img id="ru.svg" width="30">
-        <img id="en.svg" width="30">
+        <img src=<%= require("../assets/ru.svg")%> width="30">
+        <img src=<%= require("../assets/en.svg")%> width="30">
         <div class="nav" >
         <ul>
             <li><a href="./index.html" class="lang" key="home" <% if(htmlWebpackPlugin.options.title == 'Home'){ %> id="active" <% } %>>Главная</a></li>
