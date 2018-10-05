@@ -1,6 +1,11 @@
 var HtmlWebPackPlugin = require("html-webpack-plugin");
 var path = require('path');
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
+let fs = require('fs');
+const homePage = fs.readFileSync('./src/templates/home.ejs');
+const bansPage = fs.readFileSync('./src/templates/bans.ejs');
+const monitorPage = fs.readFileSync('./src/templates/monitor.ejs');
+const manifestPage = fs.readFileSync('./src/templates/manifest.ejs');
 
 module.exports = {
     entry: './src/index.js',
@@ -51,7 +56,8 @@ module.exports = {
             title: 'Home',
             hash: true,
             filename: 'index.html',
-            template: 'src/templates/template.ejs'
+            template: 'src/templates/template.ejs',
+            content: homePage
         }),
         // Bans
         new HtmlWebPackPlugin({
@@ -59,15 +65,8 @@ module.exports = {
             title: 'Bans',
             hash: true,
             filename: 'bans.html',
-            template: 'src/templates/template.ejs'
-        }),
-        // Manifest
-        new HtmlWebPackPlugin({
-            page: 'manifest',
-            title: 'Manifest',
-            hash: true,
-            filename: 'manifest.html',
-            template: 'src/templates/template.ejs'
+            template: 'src/templates/template.ejs',
+            content: bansPage
         }),
         // Monitor
         new HtmlWebPackPlugin({
@@ -75,7 +74,17 @@ module.exports = {
             title: 'Monitor',
             hash: true,
             filename: 'monitor.html',
-            template: 'src/templates/template.ejs'
+            template: 'src/templates/template.ejs',
+            content: monitorPage
+        }),
+        // Manifest
+        new HtmlWebPackPlugin({
+            page: 'manifest',
+            title: 'Manifest',
+            hash: true,
+            filename: 'manifest.html',
+            template: 'src/templates/template.ejs',
+            content: 'manifestPage'
         }),
 
     ]
