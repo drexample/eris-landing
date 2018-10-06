@@ -57,7 +57,8 @@ module.exports = {
             hash: true,
             filename: 'index.html',
             template: 'src/templates/template.ejs',
-            content: homePage
+            content: homePage,
+            desc: "News and Updates for Eris Gamma."
         }),
         // Bans
         new HtmlWebPackPlugin({
@@ -66,7 +67,8 @@ module.exports = {
             hash: true,
             filename: 'bans.html',
             template: 'src/templates/template.ejs',
-            content: bansPage
+            content: bansPage,
+            desc: "Up-to date list of recent bans, searchable by CKey."
         }),
         // Monitor
         new HtmlWebPackPlugin({
@@ -75,7 +77,8 @@ module.exports = {
             hash: true,
             filename: 'monitor.html',
             template: 'src/templates/template.ejs',
-            content: monitorPage
+            content: monitorPage,
+            desc: "Eris Gamma server status monitor."
         }),
         // Manifest
         new HtmlWebPackPlugin({
@@ -84,7 +87,8 @@ module.exports = {
             hash: true,
             filename: 'manifest.html',
             template: 'src/templates/template.ejs',
-            content: manifestPage
+            content: manifestPage,
+            desc: "Crew manifest for the ongoing round."
         }),
 
     ]
