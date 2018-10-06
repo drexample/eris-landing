@@ -1,0 +1,13 @@
+@import "shared/colors.css";
+@import "shared/typography.css";
+
+.ban-header input {
+    float: left;
+}
+.ban-table {
+    width: 100%;
+    margin-top: 15px;
+    text-align: left;
+    color: var(--color-fg);
+}
+

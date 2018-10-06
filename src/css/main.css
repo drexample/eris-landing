@@ -106,3 +106,11 @@ h2 {
     color: var(--h-font-color);
     font-size: 0.6em;
 }
+
+input {
+    background-image: url("../assets/noise.png");
+    height: 30px;
+    width: 300px;
+    color: var(--color-fg);
+    border: 1px solid var(--color-bg);
+}

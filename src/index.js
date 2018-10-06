@@ -1,5 +1,6 @@
 // Import css
-import styles from "./css/main.css";
+import "./css/main.css";
+import "./css/bans.css";
 
 // Import json
 import "./json/ru.json";

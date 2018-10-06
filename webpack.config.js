@@ -84,7 +84,7 @@ module.exports = {
             hash: true,
             filename: 'manifest.html',
             template: 'src/templates/template.ejs',
-            content: 'manifestPage'
+            content: manifestPage
         }),
 
     ]
