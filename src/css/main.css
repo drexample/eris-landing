@@ -77,6 +77,10 @@ li a {
     background-color: var(--color-bg);
     width: 60%;
     margin: 0 auto;
+    background-image: url('../assets/syndicate.svg');
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 .article label {
     color: var(--color-fg);

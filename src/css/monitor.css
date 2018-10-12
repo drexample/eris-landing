@@ -1,0 +1,18 @@
+.server-icon {
+    width: 100px;
+    margin: 30px 40px;
+    background-image: url("../assets/fas/server.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.offline {
+    background-image: url("../assets/fas/server-offline.svg") !important;
+}
+.server-status {
+    display: flex;
+    flex-direction: row;
+}
+h3 {
+    color: var(--color-fg);
+    font-family: "Open Sans", sans-serif;
+}
