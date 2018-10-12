@@ -1,5 +1,5 @@
 # gamma-landing
-Landing page for Gamma station.
+Landing page for Eris station.
 
 # Setup
 Install yarn and npm, then run 
