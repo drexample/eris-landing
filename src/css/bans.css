@@ -10,4 +10,21 @@
     text-align: left;
     color: var(--color-fg);
 }
-
+.ban-table tr {
+    line-height: 30px;
+}
+.ban-table td, .ban-table tr {
+    text-align: center;
+    padding: 0 10px 0;
+}
+.ban-container {
+    min-height: 800px;
+}
+.ban-checkbox {
+    width: 16px;
+    height: 16px;
+    line-height: 30px;
+}
+.ban-span {
+    margin: 15px;
+}
