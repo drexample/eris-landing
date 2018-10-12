@@ -1,4 +1,4 @@
-# gamma-landing
+# eris-landing
 Landing page for Eris station.
 
 # Setup
