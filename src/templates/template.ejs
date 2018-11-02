@@ -16,26 +16,37 @@
 
 <body>
     <div class="header-wrapper">
-        <img src=<%= require( "../assets/ru.svg")%> width="30">
-        <img src=<%= require( "../assets/en.svg")%> width="30">
+        <img src=<%=require( "../assets/ru.svg" )%> width="30">
+        <img src=<%=require( "../assets/en.svg" )%> width="30">
         <div class="nav">
             <ul>
-                <li><a href="./index.html" class="lang" key="home" <% if(htmlWebpackPlugin.options.title=='Home' ){ %> id="active" <% } %>>Главная</a></li>
-                <li><a href="./bans.html" class="lang" key="bans" <% if(htmlWebpackPlugin.options.title=='Bans' ){ %> id="active" <% } %>>Баны</a></li>
-                <li><a href="./monitor.html" class="lang" key="monitor" <% if(htmlWebpackPlugin.options.title=='Monitor' ){ %> id="active" <% } %>>Состав</a></li>
+                <li><a href="./index.html" class="lang" key="home" <% if(htmlWebpackPlugin.options.title=='Home' ){ %> id="active"
+                        <% } %>>Главная</a></li>
+                <li><a href="./bans.html" class="lang" key="bans" <% if(htmlWebpackPlugin.options.title=='Bans' ){ %> id="active"
+                        <% } %>>Баны</a></li>
+                <li><a href="./monitor.html" class="lang" key="monitor" <% if(htmlWebpackPlugin.options.title=='Monitor' ){ %> id="active"
+                        <% } %>>Состав</a></li>
                 <li><a href="#" class="lang" key="wiki">Вики</a></li>
             </ul>
         </div>
     </div>
     <div class="content-wrapper">
         <div class="content">
-            <div class="stripes stripes-top">&nbsp;</div>
             <%=
-             htmlWebpackPlugin.options.content
+            htmlWebpackPlugin.options.content
             %>
+            <!--
+                 Script to generate placeholder avatars.
 
-                <div class="stripes stripes-bottom" id="bottom">&nbsp;</div>
+                 If you're not testing, you can safely delete this.
+            -->
+            <script>
+            var placeholders = document.getElementsByClassName("placeholder");
 
+            for (var i = 0; i < placeholders.length; i++){
+                 placeholders[i].src = "http://tinygraphs.com/squares/" + Math.random(1, 80) + "?theme=heatwave";
+             }
+            </script>
         </div>
     </div>
 

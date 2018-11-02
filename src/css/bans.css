@@ -4,6 +4,11 @@
 .ban-header input {
     float: left;
 }
+.ban-search {
+    background-color: rgb(10, 10, 10);
+    padding: 10px;
+    box-sizing: border-box;
+}
 .ban-table {
     width: 100%;
     margin-top: 15px;
@@ -19,6 +24,7 @@
 }
 .ban-container {
     min-height: 800px;
+
 }
 .ban-checkbox {
     width: 16px;
