@@ -17,3 +17,13 @@ h3 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
+.lesser-manifest-table {
+    width: 20%;
+}
+.lesser-manifest-container {
+    display: flex;
+    justify-content: space-between;
+}
+.lesser-manifest-table td {
+    display: block;
+}
