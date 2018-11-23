@@ -19,10 +19,11 @@ h3 {
 }
 .lesser-manifest-table {
     width: 20%;
+    min-width: 170px;
 }
 .lesser-manifest-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .lesser-manifest-table td {
     display: block;

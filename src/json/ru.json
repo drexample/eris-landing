@@ -3,5 +3,29 @@
     "bans":"Баны",
     "monitor":"Состав",
     "manifest":"Манифест",
-    "wiki":"Вики"
+    "wiki":"Вики",
+
+    "jobbans":"",
+    "standardbans":"",
+    "admin":"",
+    "duration":"",
+    "expires":"",
+    "job(s)":"",
+    "reason":"",
+
+    "server":"",
+    "status":"",
+    "uptime":"",
+    "description":"",
+    "director":"",
+    "gamemaster":"",
+    "gameadmin":"",
+    "admin":"",
+    "admincandidate":"",
+    "wiki":"Вики",
+    "coder":"",
+    "mapper":"",
+    "mentor":"",
+    "spriter":"",
+    "xenovisor":""
 }

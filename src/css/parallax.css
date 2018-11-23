@@ -1,0 +1,32 @@
+@keyframes parallaxAnimation {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -960px 0;
+    }
+}
+
+.layer1, .layer2, .layer3 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: repeat;
+    z-index: -999;
+}
+
+.layer1 {
+    background-image: url("../assets/layer1.png");
+    animation: parallaxAnimation 100s linear infinite;
+}
+.layer2 {
+    background-image: url("../assets/layer2.png");
+    animation: parallaxAnimation 50s linear infinite;
+}
+
+.layer3 {
+    background-image: url("../assets/layer3.png");
+    animation: parallaxAnimation 25s linear infinite;
+}

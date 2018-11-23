@@ -6,12 +6,12 @@
 }
 .ban-search {
     background-color: rgb(10, 10, 10);
+    background-image: none;
     padding: 10px;
     box-sizing: border-box;
 }
 .ban-table {
     width: 100%;
-    margin-top: 15px;
     text-align: left;
     color: var(--color-fg);
 }
