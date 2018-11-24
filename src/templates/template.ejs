@@ -15,39 +15,74 @@
 </head>
 
 <body>
-    <div class="layer1"></div>
-    <div class="layer2"></div>
-    <div class="layer3"></div>
-    <div class="header-wrapper">
-        <div class="nav">
-            <ul>
-                <li><a href="./index.html" class="lang" key="home" <% if(htmlWebpackPlugin.options.title=='Home' ){ %> id="active"
-                        <% } %>>Главная</a></li>
-                <li><a href="./bans.html" class="lang" key="bans" <% if(htmlWebpackPlugin.options.title=='Bans' ){ %> id="active"
-                        <% } %>>Баны</a></li>
-                <li><a href="./monitor.html" class="lang" key="monitor" <% if(htmlWebpackPlugin.options.title=='Monitor' ){ %> id="active"
-                        <% } %>>Состав</a></li>
-                <li><a href="#" class="lang" key="wiki">Вики</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="content-wrapper">
-        <div class="content">
-            <%=
+    <div class="flex-layout">
+        <div class="layer1"></div>
+        <div class="layer2"></div>
+        <header>
+            <div class="nav">
+                <ul>
+                    <li><a href="./index.html" class="lang" key="home" <% if(htmlWebpackPlugin.options.title=='Home' ){ %> id="active"
+                            <% } %>>Главная</a></li>
+                    <li><a href="./bans.html" class="lang" key="bans" <% if(htmlWebpackPlugin.options.title=='Bans' ){ %> id="active"
+                            <% } %>>Баны</a></li>
+                    <li><a href="./monitor.html" class="lang" key="monitor" <% if(htmlWebpackPlugin.options.title=='Monitor' ){ %> id="active"
+                            <% } %>>Состав</a></li>
+                    <li><a href="#" class="lang" key="wiki">Вики</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="flex-body">
+            <div class="flex-sidebar">
+            </div>
+            <div class="server-wrapper" >
+            <div class="server-status">
+                <div class="server-icon">
+                </div>
+                <div class="server-info">
+                    <h3>ERIS GAMMA</h3>
+                    <br>
+                    <h3>PLAYERS: 2/10</h3>
+                    <h3>STATUS: ONLINE</h3>
+                    <h3>DESC: Eris Gamma SS13 server</h3>
+                </div>
+                <div class="server-play" >
+                    <h3>PLAY NOW</h3>
+                </div>
+            </div>
+
+
+            <div class="server-status">
+                <div class="server-icon offline">
+                </div>
+                <div class="server-info">
+                    <h3>NULL STATION</h3>
+                    <br>
+                    <h3>PLAYERS: 0/33</h3>
+                    <h3>STATUS: OFFLINE</h3>
+                    <h3>DESC: Doesn't exist</h3>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="flex-content">
+                    <%=
             htmlWebpackPlugin.options.content
             %>
-            <!--
+                    <!--
                  Script to generate placeholder avatars.
 
                  If you're not testing, you can safely delete this.
             -->
-            <script>
-                var placeholders = document.getElementsByClassName("placeholder");
+                    <script>
+                        var placeholders = document.getElementsByClassName("placeholder");
 
-                for (var i = 0; i < placeholders.length; i++) {
-                    placeholders[i].src = "http://tinygraphs.com/squares/" + Math.random(1, 80) + "?theme=heatwave";
-                }
-            </script>
+                        for (var i = 0; i < placeholders.length; i++) {
+                            placeholders[i].src = "http://tinygraphs.com/squares/" + Math.random(1, 80) + "?theme=heatwave";
+                        }
+                    </script>
+            </div>
+            <div class="flex-sidebar-right"></div>
         </div>
     </div>
 

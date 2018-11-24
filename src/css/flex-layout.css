@@ -1,0 +1,22 @@
+.flex-layout {
+    display: flex;
+    flex-direction: column;
+}
+.flex-body {
+    display: flex;
+}
+.flex-sidebar {
+    flex: 0 0 17em;
+    order: -1;
+}
+.flex-sidebar-right {
+    flex: 0 0 17em;
+    order: 2;
+}
+.flex-content {
+    width: 100%;
+    min-height: 800px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("../assets/noise.png");
+}
